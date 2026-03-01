@@ -1,0 +1,107 @@
+/* Reset some defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+}
+
+.upload-card {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px dashed #4caf50;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.upload-card:hover {
+    background: rgba(76, 175, 80, 0.05);
+    border-color: #2e7d32;
+}
+
+.upload-card input[type="file"] {
+    display: none;
+}
+
+.upload-card label {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #4caf50;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-card label:hover {
+    background: #2e7d32;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    border: none;
+    background: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #2e7d32;
+    transform: scale(1.05);
+}
+
+.result-card {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.result-card img {
+    max-width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.disease-name {
+    color: #e53935;
+    font-weight: bold;
+    text-transform: capitalize;
+}
